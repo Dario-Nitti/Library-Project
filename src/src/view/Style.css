@@ -1,0 +1,32 @@
+
+.Like_btn {
+    -fx-shape: "M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z";
+}
+
+.Logout {
+    -fx-background-image: url("img/Log.png");
+    -fx-background-size: 70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: trasparent;
+}
+.LogoutHome {
+    -fx-background-image: url("img/Log.png");
+    -fx-background-size: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: trasparent;
+}
+
+
+
+.Home{
+    -fx-background-image: url("img/Home.png");
+    -fx-background-size: 70px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: trasparent;
+}
+.Profilo{
+    -fx-background-image: url("img/Profilo.jpg");
+    -fx-background-size: 40px;
+    -fx-background-color: trasparent;
+    -fx-background-repeat: no-repeat;
+}

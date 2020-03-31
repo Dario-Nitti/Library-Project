@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="presenter.core.LoginPresenter">
+    <children>
+        <SplitPane dividerPositions="0.5117056856187291" layoutY="6.0" prefHeight="394.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Label layoutX="124.0" layoutY="24.0" prefHeight="21.0" prefWidth="66.0" text="Accedi">
+                            <font>
+                                <Font name="Corbel Italic" size="17.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="emaillog" layoutX="75.0" layoutY="119.0" promptText="Email"/>
+                        <PasswordField fx:id="passlog" layoutX="75.0" layoutY="166.0" promptText="Password"/>
+                        <Button fx:id="accedi" layoutX="120.0" layoutY="266.0" mnemonicParsing="false" onAction="#Login"
+                                text="Accedi"/>
+                        <Label fx:id="messagelog" layoutX="75.0" layoutY="304.0" prefHeight="17.0" prefWidth="165.0"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Label layoutX="117.0" layoutY="24.0" text="Registrati">
+                            <font>
+                                <Font name="Corbel Italic" size="17.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="nomereg" layoutX="70.0" layoutY="67.0" promptText="Nome"/>
+                        <TextField fx:id="cognomereg" layoutX="70.0" layoutY="115.0" promptText="Cognome"/>
+                        <TextField fx:id="emailreg" layoutX="70.0" layoutY="162.0" promptText="Email"/>
+                        <TextField fx:id="passreg" layoutX="70.0" layoutY="209.0" promptText="Password"/>
+                        <Button fx:id="reg" layoutX="112.0" layoutY="266.0" mnemonicParsing="false"
+                                onAction="#Registrazione" text="Registrati"/>
+                        <Label fx:id="messagereg" layoutX="81.0" layoutY="319.0" prefHeight="17.0" prefWidth="165.0"/>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presenter.core.PublicationPresenter">
+   <children>
+      <SplitPane layoutX="-8.0" layoutY="-7.0" prefHeight="407.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="405.0" prefWidth="429.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="61.0" prefHeight="17.0" prefWidth="47.0" text="Isbn" />
+                  <TextField fx:id="isbnpub" layoutX="101.0" layoutY="57.0" promptText="Isbn" />
+                  <Label layoutX="26.0" layoutY="107.0" prefHeight="17.0" prefWidth="47.0" text="Titolo" />
+                  <Label layoutX="26.0" layoutY="152.0" prefHeight="17.0" prefWidth="47.0" text="Editore" />
+                  <Label layoutX="26.0" layoutY="202.0" prefHeight="17.0" prefWidth="47.0" text="Data" />
+                   <Label layoutX="138.0" layoutY="203.0" prefHeight="17.0" prefWidth="47.0" text="-" />
+                   <Label layoutX="192.0" layoutY="203.0" prefHeight="17.0" prefWidth="47.0" text="-" />
+                  <Label layoutX="26.0" layoutY="248.0" prefHeight="17.0" prefWidth="47.0" text="Lingua" />
+                  <Label layoutX="26.0" layoutY="298.0" prefHeight="17.0" prefWidth="47.0" text="Pagine" />
+                  <Label layoutX="296.0" layoutY="63.0" prefHeight="17.0" prefWidth="64.0" text="Descrizione" />
+                  <Label layoutX="323.0" layoutY="152.0" prefHeight="17.0" prefWidth="64.0" text="Indice" />
+                  <Label layoutX="287.0" layoutY="216.0" prefHeight="17.0" prefWidth="74.0" text="Nome autore" />
+                   <Label layoutX="268.0" layoutY="259.0" prefHeight="17.0" prefWidth="97.0" text="Cognome autore" />
+                  <TextField fx:id="titolopub" layoutX="101.0" layoutY="106.0" promptText="Titolo pubblicazione" />
+                  <TextField fx:id="editorepub" layoutX="100.0" layoutY="148.0" promptText="Editore Pubblicazione" />
+                  <TextField fx:id="giornodatapub" layoutX="100.0" layoutY="199.0" prefHeight="25.0" prefWidth="34.0" promptText="DD" />
+                   <TextField fx:id="mesedatapub" layoutX="148.0" layoutY="199.0" prefHeight="25.0" prefWidth="40.0" promptText="MM" />
+                   <TextField fx:id="annodatapub" layoutX="203.0" layoutY="199.0" prefHeight="25.0" prefWidth="47.0" promptText="YYYY" />
+                  <TextField fx:id="linguapub" layoutX="100.0" layoutY="244.0" promptText="Lingua pubblicazione" />
+                  <TextField fx:id="paginepub" layoutX="100.0" layoutY="294.0" prefHeight="25.0" prefWidth="47.0" promptText="N" />
+                  <TextField fx:id="nomeautorepub" layoutX="365.0" layoutY="212.0" prefHeight="25.0" prefWidth="210.0" promptText="Nome" />
+                   <TextField fx:id="cognomeautorepub" layoutX="365.0" layoutY="256.0" prefHeight="25.0" prefWidth="210.0" promptText="Cognome" />
+                  <TextArea fx:id="descrizionepub" layoutX="364.0" layoutY="50.0" prefHeight="50.0" prefWidth="210.0" promptText="Inserisci una breve descrizione..." />
+                  <Button layoutX="394.0" layoutY="341.0" mnemonicParsing="false" onAction="#CreaPubblicazione" prefHeight="50.0" prefWidth="153.0" text="Inserisci " />
+                  <TextArea layoutX="365.0" layoutY="136.0" prefHeight="50.0" prefWidth="210.0" promptText="Indice della pubblicazione" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

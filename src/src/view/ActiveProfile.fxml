@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="627.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presenter.core.UserPresenter">
+    <children>
+        <Pane prefHeight="627.0" prefWidth="600.0">
+            <children>
+                <Button layoutX="3.0" layoutY="7.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="72.0" styleClass="Home" stylesheets="@Style.css" />
+                <Button id="Logout" contentDisplay="CENTER" layoutX="5.0" layoutY="541.0" minHeight="15.0" minWidth="46.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="72.0" styleClass="Logout" stylesheets="@Style.css" />
+                <Separator layoutX="73.0" layoutY="-15.0" orientation="VERTICAL" prefHeight="642.0" prefWidth="5.0" />
+                <Label layoutX="13.0" layoutY="605.0" prefHeight="17.0" prefWidth="55.0" text="Logout" />
+            <TableView accessibleRole="BUTTON" editable="true" layoutX="75.0" layoutY="71.0" prefHeight="203.0" prefWidth="511.0">
+              <columns>
+                <TableColumn fx:id="Pub" prefWidth="147.0" text="Pubblicazione" />
+                <TableColumn fx:id="Rev" minWidth="0.0" prefWidth="99.0" text="Recensione" />
+                  <TableColumn fx:id="Approved" minWidth="0.0" prefWidth="127.0" text="Approvazione" />
+                  <TableColumn fx:id="User" prefWidth="137.0" text="Utente" />
+              </columns>
+            </TableView>
+            <TableView layoutX="75.0" layoutY="365.0" prefHeight="200.0" prefWidth="518.0">
+              <columns>
+                <TableColumn fx:id="PassiveUs" prefWidth="247.0" text="Utenti Passivi" />
+                <TableColumn fx:id="Active" prefWidth="280.0" text="Attivazione" />
+              </columns>
+            </TableView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
