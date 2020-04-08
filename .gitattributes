@@ -1,0 +1,4 @@
+  
+* linguist-vendored
+*.C linguist-vendored=false
+*.Java linguist-vendored=false
